@@ -1,0 +1,14 @@
+import type { Metadata } from "next";
+import { CheckoutView } from "@/components/checkout/checkout-view";
+
+export const metadata: Metadata = {
+  title: "Checkout",
+};
+
+export default function CheckoutPage() {
+  return (
+    <div className="shell py-8 md:py-12">
+      <CheckoutView />
+    </div>
+  );
+}
